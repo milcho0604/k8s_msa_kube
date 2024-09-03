@@ -3,7 +3,6 @@ spring:
     host: ${REDIS_HOST}
     port: 6379
 
-
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://${DB_HOST}:3306/ordersystem
