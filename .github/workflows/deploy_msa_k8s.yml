@@ -18,7 +18,6 @@ jobs:
           version: "v1.25.9"
         id: install
       
-      
       - name: configure aws
         uses: aws-actions/configure-aws-credentials@v1
         with: 
@@ -27,7 +26,7 @@ jobs:
           aws-region: ap-northeast-2
 
       - name: update cluster information
-        run: aws eks update-kubeconfig --region ap-northeast-2 --name teenkiri
+        run: aws eks update-kubeconfig --name teenkiri --region ap-northeast-2
       
       - name: login ECR
         id: login-ecr
